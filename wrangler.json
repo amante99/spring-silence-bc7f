@@ -1,0 +1,30 @@
+{
+  "name": "spring-silence-bc7f",
+  "main": "./dist/index.js",
+  "assets": {
+    "directory": "./dist"
+  },
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "EXAMPLE_VALUE": "example_value"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "spring-silence-bc7f-d1",
+      "database_id": "a7d60c9d-71bd-432a-9538-a6be1b738beb"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "spring-silence-bc7f-customer-workflow",
+      "binding": "CUSTOMER_WORKFLOW",
+      "class_name": "CustomerWorkflow"
+    }
+  ]
+}
